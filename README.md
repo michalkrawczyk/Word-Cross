@@ -5,4 +5,4 @@ Then Naive solves it , highlight words that has been found and prints them
 
 Application is working properly , but propably would be extended with:
 - Rabin–Karp algorithm
-- diffrent colors for every word in solution
+- different colors for every word in solution
