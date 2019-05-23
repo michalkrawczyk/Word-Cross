@@ -1,0 +1,10 @@
+15
+15
+2
+5
+
+##################
+1.Liczba Wierszy
+2.Liczba Kolumns
+3.Liczba Kierunków
+4.Liczba Umieszczonych s³ów
