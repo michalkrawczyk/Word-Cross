@@ -1,5 +1,5 @@
 # Word-Cross
-Made as University exercise console application 
+Console Application written for one of University courses
 
 Basing on data from config.txt creates arena with specified ammount of random words loaded from "słowa.txt" and random characters.
 
