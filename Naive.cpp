@@ -1,4 +1,4 @@
-//Created By Micha³ Krawczyk on 23.05.2019
+//Created By MichaÂ³ Krawczyk on 23.05.2019
 #include "pch.h"
 #include "Naive.h"
 
@@ -23,7 +23,7 @@ Naive::Naive(mapStrBool &dictionary, int ndirections)
 			this->wordsUsed[it.first] = false;
 		}
 	}
-	if (this->wordsUsed.empty()) // do rozmyœlania
+	if (this->wordsUsed.empty())
 	{
 		throw std::runtime_error("Solver nie wczytal zadnych slow");
 	}
