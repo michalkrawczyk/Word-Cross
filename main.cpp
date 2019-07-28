@@ -5,10 +5,9 @@
 #include <fstream>
 #include <conio.h>
 
-//#include "Arena.h"
+
 #include "Naive.h"
 #include "Configuration.h"
-//include "Misc.h"
 
 
 #define DICTIONARY_FILE "słowa.txt" // const unnecessary - it should be able to redefine
@@ -37,7 +36,7 @@ int main()
 		loadData();
 		Configuration loadConfig;
 		
-		bool arenaCreated = false; // considering: make getter from Arena.h
+		bool arenaCreated = false; 
 		Arena game(loadConfig.getNDirections());
 
 		int choice = CHOICE::NONE;
@@ -146,7 +145,7 @@ void loadData()
 	if (input.is_open() && input.good())
 	{
 		std::string word;
-		std::getline(input, word); // aby pozbyć się "200 słów"
+		std::getline(input, word); // to get rid of first line
 
 		while (!input.eof())
 		{
