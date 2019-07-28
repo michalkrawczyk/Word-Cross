@@ -8,7 +8,6 @@ Position::Position(std::string &word, int row, int column, DIRECTION dir)
 	this->row = row;
 	this->column = column;
 	this->dir = dir;
-	// zabezpieczenie przed nieprawid³ow¹ pozycj¹
 }
 
 std::string Position::getWord()
@@ -49,5 +48,3 @@ void Position::printPosition()
 	}
 	
 }
-
-//Considering to store also color for color mixing
