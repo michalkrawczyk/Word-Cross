@@ -1,4 +1,4 @@
-//Created By Micha³ Krawczyk on 23.05.2019
+//Created By MichaÂ³ Krawczyk on 23.05.2019
 #pragma once
 
 #include <string>
@@ -19,5 +19,3 @@ enum COLOR //kolory konsoli do wypisywania
 
 
 std::string formatPolish(std::string word);
-
-//Considering mixing colors for solution
