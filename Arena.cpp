@@ -1,4 +1,4 @@
-//Created By Micha³ Krawczyk on 23.05.2019
+//Created By MichaÂ³ Krawczyk on 23.05.2019
 #include "pch.h"
 #include "Arena.h"
 
@@ -53,8 +53,6 @@ void Arena::makeArena(vec2Dchar &arena, int columns, int rows)
 bool Arena::findWord(mapStrBool &dictionary, std::string word)
 {
 	//check if given word is used in Arena
-
-	//	Mo¿e u¿yæ w Mainie?
 
 	word = formatPolish(word); 
 	std::cout << word << std::endl;
@@ -199,7 +197,8 @@ void Arena::fullfillArena(vec2Dchar & arena, mapStrBool & dictionary, int nwords
 			mapStrBool::iterator mapIt;
 			
 			//losowanie dopoki nie znajdzie pasujacego wyrazu
-			//dodatkowe ograniczenie czasowe - jeœli nie zmieœci siê w 100 losowaniach na 1 wyraz to idzie exception
+			//randomizes till gets matching word
+			//if not found in 100 iterations - exception is raised
 			int controlValue = 0;
 			int x, y;
 
@@ -267,6 +266,7 @@ bool Arena::wordFit(vec2Dchar & arena, std::string & word, int column, int row, 
 					for (int i=0;i<wordlen;i++)
 					{
 						//sprawdza czy w tym miejscu jest litera i czy jest puste
+						//Check if given place is empty or contains already letter
 						if (arena[row][column + i] != '*' && arena[row][column] != word[i])
 						{
 							return false;
@@ -304,7 +304,3 @@ bool Arena::wordFit(vec2Dchar & arena, std::string & word, int column, int row, 
 	}
 	return false;
 }
-
-
-//cast to int in for loops made just to delete warnings with comparison between 2 different types
-// Still considering limit rows and columns to max console size
