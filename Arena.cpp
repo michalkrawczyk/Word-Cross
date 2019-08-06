@@ -28,7 +28,7 @@ void Arena::makeArena(vec2Dchar &arena, int columns, int rows)
 	//generates empty Arena
 	arena.clear();
 
-	if (columns <= 0 || rows <= 0) //alternative to unsigned values ,due to comparison operations - avoiding unexpected situations
+	if (columns <= 0 || rows <= 0)
 	{
 		std::invalid_argument("Niedozwolone rozmiary Planszy");
 	}
@@ -196,7 +196,6 @@ void Arena::fullfillArena(vec2Dchar & arena, mapStrBool & dictionary, int nwords
 
 			mapStrBool::iterator mapIt;
 			
-			//losowanie dopoki nie znajdzie pasujacego wyrazu
 			//randomizes till gets matching word
 			//if not found in 100 iterations - exception is raised
 			int controlValue = 0;
