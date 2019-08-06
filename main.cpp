@@ -10,7 +10,7 @@
 #include "Configuration.h"
 
 
-#define DICTIONARY_FILE "słowa.txt" // const unnecessary - it should be able to redefine
+#define DICTIONARY_FILE "słowa.txt"
 
 
 mapStrBool dictionary;
@@ -177,7 +177,7 @@ void resetDictionary()
 	}
 	else
 	{
-		std::cout << "Dictionary not found - Reading file again" << std::endl;
+		std::cout << "Slownik jest pusty - Ponowne wczytanie danych" << std::endl;
 		loadData();
 	}
 		

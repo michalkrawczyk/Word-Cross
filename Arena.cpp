@@ -74,7 +74,7 @@ bool Arena::findWord(mapStrBool &dictionary, std::string word)
 
 void Arena::usedWords(mapStrBool &dictionary)
 {
-	//wyswietla liste uzytych slow
+	//prints list of used words
 	int total = 0;
 	if (!isEmpty)
 	{
@@ -182,7 +182,7 @@ void Arena::printArena(vec2Dchar & arena)
 
 void Arena::fullfillArena(vec2Dchar & arena, mapStrBool & dictionary, int nwords)
 {
-	//wypelnia plansze slowami i przypadkowymi znakami
+	//Fulfill Arena with words and random letters
 	if (generated)
 	{
 		
@@ -249,7 +249,7 @@ int Arena::getnDirections()
 
 bool Arena::wordFit(vec2Dchar & arena, std::string & word, int column, int row, DIRECTION dir)
 {
-	//sprawdza czy slowo pasuje
+	//Check if word can be inserted in given place
 	int height = arena.size() ;
 	int width = arena[0].size();
 	int wordlen = word.length();
@@ -264,7 +264,6 @@ bool Arena::wordFit(vec2Dchar & arena, std::string & word, int column, int row, 
 				{
 					for (int i=0;i<wordlen;i++)
 					{
-						//sprawdza czy w tym miejscu jest litera i czy jest puste
 						//Check if given place is empty or contains already letter
 						if (arena[row][column + i] != '*' && arena[row][column] != word[i])
 						{

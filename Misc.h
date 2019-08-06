@@ -4,7 +4,7 @@
 #include <string>
 
 
-enum COLOR //kolory konsoli do wypisywania
+enum COLOR //console colors
 {
 	BLACK = 0, 
 	DARKBLUE = 1,
